@@ -13,7 +13,7 @@ network SecureRouting {
             routerId = "R" + string(index);
             isMalicious = index < parent.numMalicious;
             updateInterval = parent.updateInterval;
-            @display("p=" + string(index*100) + ",100");
+            @display("p=100+100*index,100");
         }
     
     connections allowunconnected:

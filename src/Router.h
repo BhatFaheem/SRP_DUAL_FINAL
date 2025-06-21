@@ -97,5 +97,5 @@ class Router : public cSimpleModule {
     virtual void handleMessage(cMessage *msg) override;
     virtual void finish() override;
 };
-
+Define_Module(Router)
 #endif

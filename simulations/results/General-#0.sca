@@ -1,0 +1,184 @@
+version 3
+run General-0-20250621-23:58:33-33907
+attr configname General
+attr datetime 20250621-23:58:33
+attr datetimef 20250621-235833
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network src.SecureRouting
+attr processid 33907
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../inet4.5/images
+config network src.SecureRouting
+config sim-time-limit 30s
+config *.numRouters 6
+config *.numMalicious 2
+config *.updateInterval 1s
+config *.topology "\"ring\""
+config **.router[*].routerId "\"R\" + string(ancestorIndex(0))"
+config **.router[*].isMalicious "ancestorIndex(0) < 2"
+config **.router[*].updateInterval 1s
+config **.vector-recording true
+config **.scalar-recording true
+config qtenv-default-config General
+config qtenv-default-run 1
+
+par SecureRouting.router[0].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[0].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[0].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[1].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[1].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[1].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[1].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[1].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[1].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[2].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[2].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[2].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[2].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[2].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[2].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[3].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[3].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[3].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[3].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[3].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[3].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[4].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[4].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[4].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[4].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[4].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[4].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[5].port$o[0].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[5].port$o[0].channel disabled false
+attr mutable ""
+par SecureRouting.router[5].port$o[0].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[5].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[5].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[5].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[0].port$o[1].channel typename "\"ned.DelayChannel\""
+par SecureRouting.router[0].port$o[1].channel disabled false
+attr mutable ""
+par SecureRouting.router[0].port$o[1].channel delay 0.0001s
+attr mutable ""
+attr unit s
+par SecureRouting.router[0] typename "\"src.Router\""
+par SecureRouting.router[0] routerId "\"R0\""
+par SecureRouting.router[0] isMalicious true
+par SecureRouting.router[0] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[0] numSentUpdates 346
+scalar SecureRouting.router[0] numReceivedUpdates 293
+scalar SecureRouting.router[0] numAuthFailures 0
+scalar SecureRouting.router[0] numMaliciousUpdatesSent 346
+scalar SecureRouting.router[0] lastChangeTime 1.44327824794
+scalar SecureRouting.router[0] isMalicious 1
+scalar SecureRouting.router[0] authenticationSuccessRate 100
+par SecureRouting.router[1] typename "\"src.Router\""
+par SecureRouting.router[1] routerId "\"R1\""
+par SecureRouting.router[1] isMalicious true
+par SecureRouting.router[1] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[1] numSentUpdates 350
+scalar SecureRouting.router[1] numReceivedUpdates 289
+scalar SecureRouting.router[1] numAuthFailures 0
+scalar SecureRouting.router[1] numMaliciousUpdatesSent 350
+scalar SecureRouting.router[1] lastChangeTime 1.386175745989
+scalar SecureRouting.router[1] isMalicious 1
+scalar SecureRouting.router[1] authenticationSuccessRate 100
+par SecureRouting.router[2] typename "\"src.Router\""
+par SecureRouting.router[2] routerId "\"R2\""
+par SecureRouting.router[2] isMalicious false
+par SecureRouting.router[2] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[2] numSentUpdates 232
+scalar SecureRouting.router[2] numReceivedUpdates 294
+scalar SecureRouting.router[2] numAuthFailures 175
+scalar SecureRouting.router[2] numMaliciousUpdatesSent 0
+scalar SecureRouting.router[2] lastChangeTime 1.437806297636
+scalar SecureRouting.router[2] isMalicious 0
+scalar SecureRouting.router[2] authenticationSuccessRate 40.47619047619
+par SecureRouting.router[3] typename "\"src.Router\""
+par SecureRouting.router[3] routerId "\"R3\""
+par SecureRouting.router[3] isMalicious false
+par SecureRouting.router[3] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[3] numSentUpdates 238
+scalar SecureRouting.router[3] numReceivedUpdates 233
+scalar SecureRouting.router[3] numAuthFailures 0
+scalar SecureRouting.router[3] numMaliciousUpdatesSent 0
+scalar SecureRouting.router[3] lastChangeTime 1.341205348151
+scalar SecureRouting.router[3] isMalicious 0
+scalar SecureRouting.router[3] authenticationSuccessRate 100
+par SecureRouting.router[4] typename "\"src.Router\""
+par SecureRouting.router[4] routerId "\"R4\""
+par SecureRouting.router[4] isMalicious false
+par SecureRouting.router[4] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[4] numSentUpdates 234
+scalar SecureRouting.router[4] numReceivedUpdates 237
+scalar SecureRouting.router[4] numAuthFailures 0
+scalar SecureRouting.router[4] numMaliciousUpdatesSent 0
+scalar SecureRouting.router[4] lastChangeTime 0.44327824794
+scalar SecureRouting.router[4] isMalicious 0
+scalar SecureRouting.router[4] authenticationSuccessRate 100
+par SecureRouting.router[5] typename "\"src.Router\""
+par SecureRouting.router[5] routerId "\"R5\""
+par SecureRouting.router[5] isMalicious false
+par SecureRouting.router[5] updateInterval 1s
+attr unit s
+scalar SecureRouting.router[5] numSentUpdates 236
+scalar SecureRouting.router[5] numReceivedUpdates 290
+scalar SecureRouting.router[5] numAuthFailures 173
+scalar SecureRouting.router[5] numMaliciousUpdatesSent 0
+scalar SecureRouting.router[5] lastChangeTime 1.341205348151
+scalar SecureRouting.router[5] isMalicious 0
+scalar SecureRouting.router[5] authenticationSuccessRate 40.344827586207
+par SecureRouting typename "\"src.SecureRouting\""
+par SecureRouting numRouters 6
+par SecureRouting numMalicious 2
+par SecureRouting topology "\"ring\""
+par SecureRouting updateInterval 1s
+attr unit s
+
